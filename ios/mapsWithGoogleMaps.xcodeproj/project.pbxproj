@@ -1125,21 +1125,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-mapsWithGoogleMaps/Pods-mapsWithGoogleMaps-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-mapsWithGoogleMaps/Pods-mapsWithGoogleMaps-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mapsWithGoogleMaps/Pods-mapsWithGoogleMaps-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mapsWithGoogleMaps/Pods-mapsWithGoogleMaps-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7A09A2A6F78DCA43BAB6F98B /* [CP] Check Pods Manifest.lock */ = {
