@@ -1,5 +1,5 @@
 {
-  "name": "mapsWithGoogleMaps",
+  "name": "maps-with-google-maps",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,15 +7,19 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.4.1",
-    "react-native": "0.56.0",
+    "react": "16.8.3",
+    "react-native": "0.59.10",
     "react-native-maps": "^0.22.1"
   },
   "devDependencies": {
-    "babel-jest": "23.6.0",
-    "babel-preset-react-native": "5.0.2",
-    "jest": "23.6.0",
-    "react-test-renderer": "16.4.1"
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
+    "@babel/runtime": "^7.5.5",
+    "babel-jest": "^24.8.0",
+    "babel-preset-react-native": "^5.0.2",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "react-test-renderer": "16.8.3"
   },
   "jest": {
     "preset": "react-native"
