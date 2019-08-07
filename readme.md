@@ -5,6 +5,8 @@ clone: https://github.com/pedrogyn/iosWithGoogleMaps
 run yarn install or npm install 
 
 run cd ios && pod install && cd ..
+react-native run-ios
+enjoy!!!
 
 ## To configure google maps on iOS
 
