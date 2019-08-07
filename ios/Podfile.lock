@@ -22,18 +22,18 @@ PODS:
     - GoogleMaps
   - Google-Maps-iOS-Utils/QuadTree (2.1.0):
     - GoogleMaps
-  - GoogleMaps (2.5.0):
-    - GoogleMaps/Maps (= 2.5.0)
-  - GoogleMaps/Base (2.5.0)
-  - GoogleMaps/Maps (2.5.0):
+  - GoogleMaps (3.1.0):
+    - GoogleMaps/Maps (= 3.1.0)
+  - GoogleMaps/Base (3.1.0)
+  - GoogleMaps/Maps (3.1.0):
     - GoogleMaps/Base
   - React (0.59.10):
     - React/Core (= 0.59.10)
-  - react-native-google-maps (0.22.1):
+  - react-native-google-maps (0.25.0):
     - Google-Maps-iOS-Utils (= 2.1.0)
-    - GoogleMaps (= 2.5.0)
+    - GoogleMaps (= 3.1.0)
     - React
-  - react-native-maps (0.22.1):
+  - react-native-maps (0.25.0):
     - React
   - React/Core (0.59.10):
     - yoga (= 0.59.10.React)
@@ -141,10 +141,10 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   Google-Maps-iOS-Utils: c32891ff472eaaa1fca032beedafa1a013af7875
-  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
+  GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
   React: 36d0768f9e93be2473b37e7fa64f92c1d5341eef
-  react-native-google-maps: 06d7adbb45aafbad5fd151f9e6f6856f546d7f58
-  react-native-maps: 5a3de82c153db99e5ac939cb2ed576f245514016
+  react-native-google-maps: 88d750ad441b19c24885f20d43a55ecac25939b5
+  react-native-maps: 190c02ca533fddac5bb49cf17bdece3644612107
   yoga: 684513b14b03201579ba3cee20218c9d1298b0cc
 
 PODFILE CHECKSUM: 1c3d040a48c74136e519ae79a42fd1a7d1351e2d
