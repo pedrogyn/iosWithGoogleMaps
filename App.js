@@ -3,11 +3,14 @@ import { Platform, StyleSheet, Text, View } from 'react-native';
 
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
+import LottieView from 'lottie-react-native';
+
 let { geolocation } = navigator;
 export default class App extends Component {
   constructor() {
     super();
     this.state = {
+      isLoading: true,
       latitude: -23.597410772305587,
       longitude: -46.68226607143879,
       latitudeDelta:0.01,
@@ -16,6 +19,10 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+
+    setTimeout(()=>{
+      this.setState({isLoading: false})
+    }, 5000)
     geolocation.getCurrentPosition(
       response => {
         response = JSON.parse(JSON.stringify(response));
@@ -48,6 +55,15 @@ export default class App extends Component {
   }
 
   render() {
+    if(this.state.isLoading){
+      return(
+        <View style={{flex:1, justifyContent: 'center', alignItems: 'center'}}>
+
+          <LottieView source={require('./src/LottieFiles/loading.json')} autoPlay loop />
+
+        </View>
+      )
+    }
     return (
       <View style={{ flex: 1 }}>
         <Text
