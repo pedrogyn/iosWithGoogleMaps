@@ -17,3 +17,7 @@ enjoy!!!
 -- follow the Airbnb instruction on https://github.com/react-native-community/react-native-maps/blob/master/docs/installation.md#build-configuration-on-android
 
 ### Don't forget: set the Google API Key on the native projects
+
+## Attention
+
+-- The app use lottie in version 2.6.1 to run with Google Maps in iOS; 
