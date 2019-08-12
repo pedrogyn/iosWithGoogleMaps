@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, FlatList, Dimensions } from 'react-native';
+import { View, Text, FlatList, Dimensions, Image } from 'react-native';
 
 export default class GymsList extends Component {
   render() {
     let width = Dimensions.get('window').width * 0.8;
     return (
-      <View style={{ position: 'absolute', width: '100%', bottom: 75 }}>
+      <View style={{ width: '100%' }}>
         <FlatList
           data={this.props.gyms}
           keyExtractor={(item, index) => String(item.id)}
@@ -30,6 +30,10 @@ export default class GymsList extends Component {
               }}
             >
               <Text>{item.title}</Text>
+              <Image
+                source={{ uri: item.logo }}
+                style={{ height: 64, width: 64 }}
+              />
             </View>
           )}
         />

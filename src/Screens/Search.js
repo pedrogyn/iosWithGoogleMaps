@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, SafeAreaView } from 'react-native';
+import {
+  View,
+  StyleSheet,
+  SafeAreaView,
+  Text,
+  Dimensions,
+  ScrollView
+} from 'react-native';
 import SearchMapComponent from '../Components/SearchMapComponent';
 import MapCursor from '../Components/MapCursor';
 import GymsList from '../Components/GymsList';
@@ -8,6 +15,9 @@ import LinearGradient from 'react-native-linear-gradient';
 import { rgba } from 'polished';
 import SearchBarComponent from '../Components/SearchBarComponent';
 import NavbarComponent from '../Components/NavbarComponent';
+
+import BottomDrawer from 'rn-bottom-drawer';
+import BottomSheet from 'reanimated-bottom-sheet';
 
 const linearColors = [
   rgba('white', 1),
@@ -38,9 +48,51 @@ export default class Search extends Component {
             <NavbarComponent />
             <SearchBarComponent />
           </LinearGradient>
-          <GymsList gyms={gyms} />
+
+          {/* <BottomDrawer
+            shadow={true}
+            roundedEdges={true}
+            style={{ borderRadius: 40 }}
+            containerHeight={Dimensions.get('screen').height * 0.8}
+            offset={Dimensions.get('screen').height * 0.1}
+            startUp={false}
+            panRes
+          >
+            <GymsList gyms={gyms} />
+          </BottomDrawer> */}
+
+          <BottomSheet
+            snapPoints={[450, 300, 0]}
+            renderContent={() => {
+              return (
+                <View style={{ backgroundColor: 'white', height: '100%' }}>
+                  <ScrollView>
+                    <GymsList gyms={gyms} />
+                    <GymsList gyms={gyms} />
+                    <GymsList gyms={gyms} />
+                    <GymsList gyms={gyms} />
+                    <GymsList gyms={gyms} />
+                    <GymsList gyms={gyms} />
+                  </ScrollView>
+                </View>
+              );
+            }}
+            renderHeader={() => {
+              return (
+                <View
+                  style={{
+                    height: 80,
+                    backgroundColor: 'white',
+                    alignItems: 'center'
+                  }}
+                >
+                  <Text>^</Text>
+                </View>
+              );
+            }}
+          />
         </View>
-     </SafeAreaView>
+      </SafeAreaView>
     );
   }
 }

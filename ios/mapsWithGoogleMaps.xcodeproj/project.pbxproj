@@ -36,6 +36,8 @@
 		2DCD954D1E0B4F2C00145EB5 /* mapsWithGoogleMapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mapsWithGoogleMapsTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		804CA94A2301AE580035F1E5 /* libRNReanimated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804CA9472301AE4C0035F1E5 /* libRNReanimated.a */; };
+		804CA9542301AF810035F1E5 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804CA9512301AF790035F1E5 /* libRNGestureHandler.a */; };
 		80E7820922FDF07400F796FE /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E781E022FDF00000F796FE /* libBVLinearGradient.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		98B3A11AD0693735E4B9B6AC /* libPods-mapsWithGoogleMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4712128EC0121AF4001795 /* libPods-mapsWithGoogleMaps.a */; };
@@ -302,6 +304,34 @@
 			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
 			remoteInfo = "jsiexecutor-tvOS";
 		};
+		804CA9462301AE4C0035F1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804CA91A2301AE4C0035F1E5 /* RNReanimated.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNReanimated;
+		};
+		804CA9482301AE4C0035F1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804CA91A2301AE4C0035F1E5 /* RNReanimated.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FDBB176E229BF04900D1E455;
+			remoteInfo = "RNReanimated-tvOS";
+		};
+		804CA9502301AF790035F1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804CA94B2301AF790035F1E5 /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNGestureHandler;
+		};
+		804CA9522301AF790035F1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804CA94B2301AF790035F1E5 /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5C32A36220C603B000FFB8D;
+			remoteInfo = "RNGestureHandler-tvOS";
+		};
 		80E781DF22FDF00000F796FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 80E781DA22FDEFFF00F796FE /* BVLinearGradient.xcodeproj */;
@@ -359,6 +389,8 @@
 		44867695C95398E06493A2C0 /* Pods-mapsWithGoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapsWithGoogleMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapsWithGoogleMaps/Pods-mapsWithGoogleMaps.debug.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		804CA91A2301AE4C0035F1E5 /* RNReanimated.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNReanimated.xcodeproj; path = "../node_modules/react-native-reanimated/ios/RNReanimated.xcodeproj"; sourceTree = "<group>"; };
+		804CA94B2301AF790035F1E5 /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
 		80E781DA22FDEFFF00F796FE /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		A65DFE143DAF960A88E2C50C /* Pods-mapsWithGoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapsWithGoogleMaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-mapsWithGoogleMaps/Pods-mapsWithGoogleMaps.release.xcconfig"; sourceTree = "<group>"; };
@@ -392,6 +424,8 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				80E7820922FDF07400F796FE /* libBVLinearGradient.a in Frameworks */,
+				804CA94A2301AE580035F1E5 /* libRNReanimated.a in Frameworks */,
+				804CA9542301AF810035F1E5 /* libRNGestureHandler.a in Frameworks */,
 				98B3A11AD0693735E4B9B6AC /* libPods-mapsWithGoogleMaps.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +608,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		804CA91B2301AE4C0035F1E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				804CA9472301AE4C0035F1E5 /* libRNReanimated.a */,
+				804CA9492301AE4C0035F1E5 /* libRNReanimated-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		804CA94C2301AF790035F1E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				804CA9512301AF790035F1E5 /* libRNGestureHandler.a */,
+				804CA9532301AF790035F1E5 /* libRNGestureHandler-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		80E781DB22FDEFFF00F796FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,6 +638,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				804CA94B2301AF790035F1E5 /* RNGestureHandler.xcodeproj */,
+				804CA91A2301AE4C0035F1E5 /* RNReanimated.xcodeproj */,
 				80E781DA22FDEFFF00F796FE /* BVLinearGradient.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -817,6 +871,14 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 804CA94C2301AF790035F1E5 /* Products */;
+					ProjectRef = 804CA94B2301AF790035F1E5 /* RNGestureHandler.xcodeproj */;
+				},
+				{
+					ProductGroup = 804CA91B2301AE4C0035F1E5 /* Products */;
+					ProjectRef = 804CA91A2301AE4C0035F1E5 /* RNReanimated.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1073,6 +1135,34 @@
 			fileType = archive.ar;
 			path = "libjsiexecutor-tvOS.a";
 			remoteRef = 8032925622F0D56300BDA77B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		804CA9472301AE4C0035F1E5 /* libRNReanimated.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNReanimated.a;
+			remoteRef = 804CA9462301AE4C0035F1E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		804CA9492301AE4C0035F1E5 /* libRNReanimated-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNReanimated-tvOS.a";
+			remoteRef = 804CA9482301AE4C0035F1E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		804CA9512301AF790035F1E5 /* libRNGestureHandler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGestureHandler.a;
+			remoteRef = 804CA9502301AF790035F1E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		804CA9532301AF790035F1E5 /* libRNGestureHandler-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNGestureHandler-tvOS.a";
+			remoteRef = 804CA9522301AF790035F1E5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		80E781E022FDF00000F796FE /* libBVLinearGradient.a */ = {
