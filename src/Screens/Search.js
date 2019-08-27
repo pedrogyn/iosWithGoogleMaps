@@ -16,7 +16,6 @@ import { rgba } from 'polished';
 import SearchBarComponent from '../Components/SearchBarComponent';
 import NavbarComponent from '../Components/NavbarComponent';
 
-import BottomDrawer from 'rn-bottom-drawer';
 import BottomSheet from 'reanimated-bottom-sheet';
 
 const linearColors = [
